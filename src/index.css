@@ -673,12 +673,11 @@ section {
   padding: 20px;
 }
 .box1 {
-     /* height: 72px; */
-    /* margin-left: 50px; */
+        height: 72px;
     display: flex;
     border-radius: 21px;
     outline-color: darkblue;
-    width: 97px;
+    width: 132px;
     margin-bottom: 5px;
     align-items: center;
 }

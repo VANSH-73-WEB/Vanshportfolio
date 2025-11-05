@@ -84,9 +84,9 @@ const Skill = () => {
       
 <div className="box1" data-aos="fade-right" data-aos-delay="700">
       <div className="nodejs" >
-       <i className="fa-solid fa-c"></i>
-      </div>
       
+       <img src="https://img.icons8.com/?size=100&id=shQTXiDQiQVR&format=png&color=000000" />
+      </div>
       
       </div>
 
