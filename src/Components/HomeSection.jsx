@@ -126,7 +126,7 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
         </div>
 
         <div className="btn" >
-          <a href="files/Vansh_Parashar_CV.pdf" className="btn" download>Download CV</a>
+          <a href="Vansh_Parashar_s_Resume (1).pdf" className="btn" download>Download CV</a>
           <a href="#" className="btn"  >Hire Me Now!</a>
         </div>
 
