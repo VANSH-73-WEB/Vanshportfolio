@@ -146,7 +146,7 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
         </div>
 
         <div className="photo"  >
-          <img src="/Img/vanshparashar3.jpg" alt="Vansh Parashar"  data-aos="fade-left" data-aos-delay="600" />
+          <img src="/Img/Vansh Parashar-img.jpg" alt="Vansh Parashar"  data-aos="fade-left" data-aos-delay="600" />
         </div>
       </div>
       
