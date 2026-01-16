@@ -27,7 +27,6 @@ useEffect(() => {
         <img src="/Img/vanshparashar3.jpg" alt="About Vansh" />
         <div className="info-about">
           
-          
         </div>
       </div>
 

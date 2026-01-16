@@ -131,16 +131,16 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
         </div>
 
         <div className="social-icons" >
-          <a href="https://facebook.com/vansh.parashar.123" target="_blank" rel="noreferrer" data-aos="fade-right" data-aos-delay="400">
+          <a href="https://facebook.com/vansh.parashar.123" target="_blank" rel="noreferrer" >
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="https://linkedin.com/in/vansh-parashar-5036a232b" target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="500">
+          <a href="https://linkedin.com/in/vansh-parashar-5036a232b" target="_blank" rel="noreferrer" >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/VANSH-73-WEB" target="_blank" rel="noreferrer" data-aos="fade-down" data-aos-delay="600">
+          <a href="https://github.com/VANSH-73-WEB" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href="https://instagram.com/vanshparashar719" target="_blank" rel="noreferrer" data-aos="fade-left" data-aos-delay="700">
+          <a href="https://instagram.com/vanshparashar719" target="_blank" rel="noreferrer" >
             <i className="fa-brands fa-instagram"></i>
           </a>
         </div>
