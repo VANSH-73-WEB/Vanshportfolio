@@ -119,10 +119,7 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
             <h5>Email :</h5>
             <span>parasharvansh719@gmail.com</span>
           </div>
-          <div className="behance-info">
-            <h5>Behance :</h5>
-            <span>nsuheuhfsuchu</span>
-          </div>
+          
         </div>
 
         <div className="btn" >

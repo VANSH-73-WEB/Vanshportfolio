@@ -804,10 +804,10 @@ section {
 .proj {
   color: #61dafb;
 }
-.lms {
+.URLShortner {
   padding: 20px;
 }
-.lms img {
+.URLShortner img {
   border-radius: 15px;
   box-shadow: 0 0 11px 19px cadetblue;
   width: 551px;
@@ -819,6 +819,15 @@ section {
   border-radius: 15px;
   box-shadow: 0 0 11px 19px cadetblue;
   width: 580px;
+}
+
+.BlogBuzz {
+  padding: 20px;
+}
+.BlogBuzz img {
+  border-radius: 15px;
+  box-shadow: 0 0 11px 19px cadetblue;
+  width: 551px;
 }
 
 .proj-item {
