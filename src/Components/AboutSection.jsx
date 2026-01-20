@@ -24,7 +24,7 @@ useEffect(() => {
         
       }}>
       <div className="photo-about" data-aos="fade-left" data-aos-delay="100">
-        <img src="/Img/vanshparashar3.jpg" alt="About Vansh" />
+        <img src="/Img/IMG20251120112806.jpg" alt="About Vansh" />
         <div className="info-about">
           
         </div>

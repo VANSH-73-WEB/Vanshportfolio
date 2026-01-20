@@ -76,9 +76,10 @@ const Skill = () => {
       <div className="nodejs" >
         <i className="fa-brands fa-node"></i>
       </div>
-       
-      
+
       </div>
+      
+
 
 
       
@@ -100,6 +101,13 @@ const Skill = () => {
       </div>
       
       
+      </div>
+      
+<div className="box1" data-aos="fade-right" data-aos-delay="700">
+      <div className="docker" >
+        <i class="fa-brands fa-docker"></i>
+      </div>
+
       </div>
 </div>
 

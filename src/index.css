@@ -42,7 +42,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 110%;
   color: white;
   z-index: 1000; 
 }
@@ -59,7 +59,7 @@ header {
 }
 
 .nav1 {
-  width: 1509px;
+  width: 1520px;
   height: 49px;
 
   backdrop-filter: blur(30px);
@@ -672,6 +672,16 @@ section {
   color: #68a063;
   padding: 20px;
 }
+
+.docker {
+  display: flex;
+  width: 45px;
+   font-size: 75px;
+  color: #2496ED;
+  padding: 20px;
+}
+
+
 .box1 {
         height: 72px;
     display: flex;
