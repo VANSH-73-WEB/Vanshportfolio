@@ -994,6 +994,24 @@ section {
   pointer-events: none;
 }
 .marq {
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 25px;
   color: aquamarine;
+}
+
+.marq p {
+  display: inline-block;
+  padding-left: 100%;
+   color: aquamarine;
+  animation: marqueeMove 12s linear infinite;
+}
+
+@keyframes marqueeMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

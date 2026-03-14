@@ -51,7 +51,7 @@ const Contactus = () => {
         </div>
 
         <div className="form-group" data-aos="fade-right" data-aos-delay="200">
-          <input type="number" name="user_number" placeholder="Enter your phone number" required />
+          <input type="tel" name="user_number" placeholder="Enter your phone number" required />
         </div>
 
         <div className="form-group" data-aos="fade-left" data-aos-delay="200">
@@ -67,18 +67,9 @@ const Contactus = () => {
         </button>
       </form>
 
-      <marquee className="marq" direction="left">Thanks For Visiting!</marquee>
-       {/* <ToastContainer 
-        position="top-right" 
-        autoClose={5000} 
-        hideProgressBar={false} 
-        newestOnTop={false} 
-        closeOnClick 
-        rtl={false} 
-        pauseOnFocusLoss 
-        draggable 
-        pauseOnHover
-      /> */}
+   <div className="marq">
+  <p>Thanks For Visiting!</p>
+</div>
     </section>
   );
   
