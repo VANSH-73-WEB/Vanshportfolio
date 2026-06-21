@@ -1,4 +1,4 @@
-/* ===== MAIN CAROUSEL ===== */
+/* ===== MAIN CAROUSEL =====*/
 .carousel {
   position: relative;              /* REQUIRED */
   width: 100%;
@@ -91,7 +91,6 @@
 .carousel-control.prev {
   left: -60px;                     /* PUSH OUTSIDE SLIDES */
 }
-
 /* RIGHT */
 .carousel-control.next {
   right: -60px;
@@ -115,4 +114,6 @@
   .carousel-control.next {
     right: 10px;
   }
-}
+} 
+
+

@@ -123,7 +123,7 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
         </div>
 
         <div className="btn" >
-          <a href="Vansh_Parashar_s_Resume (2).pdf" className="btn" download>Download CV</a>
+          <a href="Vansh_Parashar_s_Resume(4).pdf" className="btn" download>Download CV</a>
           <a href="#" className="btn"  >Hire Me Now!</a>
         </div>
 
@@ -154,3 +154,5 @@ Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a
 };
 
 export default HomeSection;
+
+

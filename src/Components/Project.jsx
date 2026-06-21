@@ -15,11 +15,22 @@ const projects = [
     title: "E-commerce",
     link: "https://github.com/VANSH-73-WEB/AURELIOSTORE.git",
   },
+  
   {
-    img: "/Img/BlogBuzz.png",
-    title: "BlogBuzz",
-    link: "https://github.com/VANSH-73-WEB/BloggBuzz.git",
+    img: "/Img/AI-Cold-MAIL.png",
+    title: "AI Cold Email Generator",
+    link: "https://github.com/VANSH-73-WEB/AI-COLD-EMAIL-GENERATER.git",
   },
+  {
+    img: "/Img/GST.png",
+    title: "GST Ledger",
+    link: "https://github.com/VANSH-73-WEB/GST-ledger.git",
+  },
+  {
+    img: "/Img/VOTING.png",
+    title: "Voting Dapp",
+    link: "https://github.com/VANSH-73-WEB/Voting-Dapp.git",
+  }
 ];
 
 const Project = () => {
@@ -119,3 +130,5 @@ const Project = () => {
 };
 
 export default Project;
+
+

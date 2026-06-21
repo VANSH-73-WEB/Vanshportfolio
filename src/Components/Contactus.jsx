@@ -68,7 +68,8 @@ const Contactus = () => {
       </form>
 
    <div className="marq">
-  <p>Thanks For Visiting!</p>
+  <p>Thanks for visiting           ✦ Let's build something refined ✦</p>
+    
 </div>
     </section>
   );
@@ -76,3 +77,5 @@ const Contactus = () => {
 };
 
 export default Contactus;
+
+
