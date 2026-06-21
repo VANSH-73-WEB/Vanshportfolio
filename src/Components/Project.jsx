@@ -6,7 +6,7 @@ import "./Carousel.css";
 
 const projects = [
   {
-    img: "/Img/Screenshot 2025-06-06 202018.png",
+    img: "/Img/WAVVY.png",
     title: "Wavvy Music App",
     link: "https://github.com/VANSH-73-WEB/Wavvy_music-_app.git",
   },
@@ -17,7 +17,7 @@ const projects = [
   },
   
   {
-    img: "/Img/AI-Cold-MAIL.png",
+    img: "/Img/AI-COLD-MAIL.png",
     title: "AI Cold Email Generator",
     link: "https://github.com/VANSH-73-WEB/AI-COLD-EMAIL-GENERATER.git",
   },
