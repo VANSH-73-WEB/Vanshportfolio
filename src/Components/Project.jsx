@@ -11,7 +11,7 @@ const projects = [
     link: "https://github.com/VANSH-73-WEB/Wavvy_music-_app.git",
   },
   {
-    img: "/Img/E-commerce.png",
+    img: "/Img/E-COMMERCE.png",
     title: "E-commerce",
     link: "https://github.com/VANSH-73-WEB/AURELIOSTORE.git",
   },
