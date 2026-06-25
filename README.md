@@ -1,16 +1,120 @@
-# React + Vite
+# 🚀 Vansh Parashar Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built with React and Vite to showcase my skills, projects, experience, and contact information.
 
-Currently, two official plugins are available:
+## 🌐 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio highlights my journey as a Full-Stack MERN Developer. It includes information about my technical skills, featured projects, resume, and ways to connect with me.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design for all devices
+- Interactive UI with smooth animations
+- Project showcase carousel
+- About Me section
+- Skills section
+- Contact form integration using EmailJS
+- Resume download functionality
+- Social media links
+- Scroll animations using AOS
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Bootstrap
+
+### Libraries & Tools
+- AOS (Animate On Scroll)
+- EmailJS
+- Font Awesome
+- React Toastify
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── Components/
+│   ├── Navbar.jsx
+│   ├── HomeSection.jsx
+│   ├── AboutSection.jsx
+│   ├── Skill.jsx
+│   ├── ServiceSection.jsx
+│   ├── Project.jsx
+│   └── Contactus.jsx
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## 📸 Featured Projects
+
+### 🎵 Wavvy Music App
+A music streaming and search application with an interactive user interface.
+
+### 🤖 AI Cold Email Generator
+An AI-powered application that generates personalized cold emails using API integration.
+
+### 🛒 E-Commerce Website
+A responsive online shopping platform with modern UI design.
+
+### 📊 GST Ledger
+A GST management and ledger tracking application.
+
+### 🗳️ Voting DApp
+A blockchain-based decentralized voting application built using smart contracts.
+
+## 🚀 Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+```
+
+2. Navigate to project folder
+
+```bash
+cd portfolio
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start development server
+
+```bash
+npm run dev
+```
+
+5. Open browser
+
+```bash
+http://localhost:5173
+```
+
+## 📬 Contact
+
+**Vansh Parashar**
+
+- Email: parasharvansh719@gmail.com
+- LinkedIn: https://linkedin.com/in/vansh-parashar-5036a232b
+- GitHub: https://github.com/VANSH-73-WEB
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
