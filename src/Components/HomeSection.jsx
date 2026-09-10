@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-import bgImage from "/Img/potfilio.avif"; 
+import 'aos/dist/aos.css';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import bgImage from "/Img/potfilio.avif";
 
-
-
+gsap.registerPlugin(ScrollTrigger);
 
 const roles = [
   "Web Designer",
@@ -18,6 +19,10 @@ const HomeSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  const sectionRef = useRef(null);
+  const contentRef = useRef(null);
+  const photoRef = useRef(null);
 
   // Typing Effect
   useEffect(() => {
@@ -78,81 +83,112 @@ const HomeSection = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false, // set to true if you want animation only once
+      once: false,
     });
   }, []);
 
+  // Cinematic hero scroll effect (Rolex/Apple-style intro dissolve):
+  // as the hero scrolls out of view, the text and portrait ease back,
+  // scale down and fade — instead of just being clipped by the fold.
+  useEffect(() => {
+    const mm = gsap.matchMedia();
 
-   
+    mm.add("(prefers-reduced-motion: no-preference)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.6,
+        },
+      });
 
+      tl.to(
+        contentRef.current,
+        { yPercent: -12, opacity: 0.15, scale: 0.96, ease: "none" },
+        0
+      ).to(
+        photoRef.current,
+        { yPercent: -6, scale: 0.82, opacity: 0.25, ease: "none" },
+        0
+      );
 
+      // Slow, subtle parallax drift on the background art itself.
+      gsap.to(sectionRef.current, {
+        backgroundPositionY: "62%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.6,
+        },
+      });
+
+      return () => tl.scrollTrigger && tl.scrollTrigger.kill();
+    });
+
+    return () => mm.revert();
+  }, []);
 
   return (
-     <section className="home" id="home"  style={{
+    <section
+      className="home"
+      id="home"
+      ref={sectionRef}
+      style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        
-      }}>
-      <div className="home-content">
-        <h1 data-aos="fade-right" data-aos-delay="10" >Hi! I'm Vansh Parashar</h1>
+      }}
+    >
+      <div className="home-content" ref={contentRef}>
+        <h1 data-aos="fade-right" data-aos-delay="10">Hi! I'm Vansh Parashar</h1>
 
+        <div className="change-text" data-aos="fade-left" data-aos-delay="100">
+          <h3>
+            And I'm &nbsp;<span className="word">{text}</span>
+          </h3>
+        </div>
 
-
-       <div className="change-text" data-aos="fade-left" data-aos-delay="100">
-  <h3>
-    And I'm &nbsp;<span className="word">{text}</span>
-  </h3>
-</div>
-
-
-
-        
         <p data-aos="fade-right" data-aos-delay="200">
-Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a passion for designing digital products and managing projects from concept to deployment.
-</p>
+          Creative and detail-oriented <strong>Full-Stack Developer (MERN)</strong> with a passion for designing digital products and managing projects from concept to deployment.
+        </p>
 
-        
         <div className="info-box" data-aos="fade-left" data-aos-delay="300">
           <div className="email-info">
             <h5>Email :</h5>
             <span>parasharvansh719@gmail.com</span>
           </div>
-          
         </div>
 
-        <div className="btn" >
-          <a href="Vansh_Parashar_s_Resume%20(4).pdf" download className="btn" >Download CV</a>
-          <a href="#" className="btn"  >Hire Me Now!</a>
+        <div className="btn">
+          <a href="Vansh_Parashar_s_Resume%20(4).pdf" download className="btn">Download CV</a>
+          <a href="#Contactus" className="btn">Hire Me Now!</a>
         </div>
 
-        <div className="social-icons" >
-          <a href="https://facebook.com/vansh.parashar.123" target="_blank" rel="noreferrer" >
+        <div className="social-icons">
+          <a href="https://facebook.com/vansh.parashar.123" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="https://linkedin.com/in/vansh-parashar-5036a232b" target="_blank" rel="noreferrer" >
+          <a href="https://linkedin.com/in/vansh-parashar-5036a232b" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a href="https://github.com/VANSH-73-WEB" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href="https://instagram.com/vanshparashar719" target="_blank" rel="noreferrer" >
+          <a href="https://instagram.com/vanshparashar719" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-instagram"></i>
           </a>
         </div>
-
-        <div className="photo"  >
-          <img src="/Img/Vansh Parashar-img.jpg" alt="Vansh Parashar"  data-aos="fade-left" data-aos-delay="600" />
-        </div>
       </div>
-      
 
+      <div className="photo" ref={photoRef}>
+        <img src="/Img/Vansh Parashar-img.jpg" alt="Vansh Parashar" data-aos="fade-left" data-aos-delay="600" />
+      </div>
     </section>
-
   );
 };
 
 export default HomeSection;
-
-

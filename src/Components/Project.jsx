@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import bgImage from "/Img/.oth.jpg";
 import "./Carousel.css";
+import useSectionReveal from "../hooks/useSectionReveal";
 
 const projects = [
   {
@@ -11,11 +12,10 @@ const projects = [
     link: "https://github.com/VANSH-73-WEB/Wavvy_music-_app.git",
   },
   {
-    img: "/Img/E-COMMERCE.png",
+    img: "/Img/E-commerce.png",
     title: "E-commerce",
     link: "https://github.com/VANSH-73-WEB/AURELIOSTORE.git",
   },
-  
   {
     img: "/Img/AI-COLD-MAIL.png",
     title: "AI Cold Email Generator",
@@ -35,10 +35,13 @@ const projects = [
 
 const Project = () => {
   const [current, setCurrent] = useState(0);
+  const innerRef = useRef(null);
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
   }, []);
+
+  useSectionReveal(innerRef);
 
   const next = () =>
     setCurrent((prev) => (prev + 1) % projects.length);
@@ -59,6 +62,7 @@ const Project = () => {
         backgroundPosition: "center",
       }}
     >
+      <div className="project-inner" ref={innerRef}>
       <div className="project" data-aos="flip-left">
         <h1>
           MY <span className="proj">PROJECT</span>
@@ -125,10 +129,9 @@ const Project = () => {
           ❯
         </button>
       </div>
+      </div>
     </section>
   );
 };
 
 export default Project;
-
-

@@ -1,36 +1,36 @@
-import React,{useEffect} from 'react';
+import React, { useEffect, useRef } from 'react';
 import bgImage from "/Img/.oth.jpg";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import useSectionReveal from '../hooks/useSectionReveal';
 
 const AboutSection = () => {
+  const photoRef = useRef(null);
+  const contentRef = useRef(null);
 
-  
-useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: false,
-  });
-  AOS.refresh();
-}, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+    AOS.refresh();
+  }, []);
 
+  useSectionReveal(photoRef, { fromScale: 0.9 });
+  useSectionReveal(contentRef, { fromScale: 0.94 });
 
   return (
-    <section id="about" className="about"  style={{
+    <section id="about" className="about" style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        
       }}>
-      <div className="photo-about" data-aos="fade-left" data-aos-delay="100">
+      <div className="photo-about" ref={photoRef}>
         <img src="/Img/vansh.jpg" alt="About Vansh" />
-        <div className="info-about">
-          
-        </div>
       </div>
 
-      <div className="about-content" data-aos="fade-right" data-aos-delay="10">
+      <div className="about-content" ref={contentRef}>
         <span>Let me introduce myself</span>
         <h2>About me</h2>
         <h3>A story of good</h3>
@@ -48,4 +48,3 @@ useEffect(() => {
 };
 
 export default AboutSection;
-

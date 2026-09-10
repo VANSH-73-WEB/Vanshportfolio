@@ -5,6 +5,7 @@ import ServiceSection from './Components/ServiceSection';
 import Skill from './Components/Skill';
 import Project from './Components/Project';
 import Contactus from './Components/Contactus';
+import ScrollTop from './Components/ScrollTop';
 import './index.css';
 
 
@@ -19,6 +20,7 @@ function App() {
       <Skill />
       <Project />
       <Contactus />
+      <ScrollTop />
     </>
   );
 }

@@ -81,7 +81,7 @@
   border: none;
   color: #fff;
   font-size: 28px;
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;                     /* ABOVE SLIDES */
